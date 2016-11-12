@@ -1,0 +1,84 @@
+/* Promotional Box only for destination */
+
+.nd-ds.pr-ct .sec-sub-t {
+  font-size: 30px;
+}
+.nd-ds .pr-rb {
+  height: calc(100% + 60px) !important;
+  width: 128px;
+  top: -30px;
+  position: absolute;
+  max-width: 131px;
+}
+.nd-ds .bt-ct {
+  margin-left: 150px;
+}
+.nd-ds .btn-pr {
+  max-width: 210px;
+}
+.nd-ds .pr-rb:after,
+.nd-ds .pr-rb:before {
+  content: '';
+  display: block;
+  width: 0;
+  height: 0;
+  position: absolute;
+  border: 14px solid;
+  z-index: 1;
+  transform: rotate(-45deg);
+}
+.nd-ds .pr-rb:before {
+  left: -14px;
+  top: 6px;
+  border-color: #151523 transparent transparent transparent !important;
+  z-index: -15;
+}
+.nd-ds .pr-rb:after {
+  right: -14px;
+  bottom: 6px;
+  border-color: transparent transparent #01010e transparent !important;
+}
+
+@media (max-width: 768px) {
+    .nd-ds .btn-pr {
+    max-width: 100%;
+  }
+}
+
+/* xs to ms */
+@media (max-width: 479px) {
+  .nd-ds .pr-rb {
+    display: none;
+  }
+  .nd-ds.pr-ct .table-cell {
+    padding:0;
+    margin:0;
+  }
+  .nd-ds .bt-ct {
+    margin-left: 0;
+  }
+  .nd-ds.pr-ct > div:first-child {
+    padding-left: 5px;
+  }
+  .nd-ds .btn-pr{
+    margin-bottom:5px;
+  }
+}
+
+/* IE hack Promotional block */
+@media screen and (min-width: 0\0){
+  .nd-ds .bt-ct {
+    height: 100%;
+  }
+}
+
+/* IE hack Promotional block */
+@media screen and (min-width: 0\0) and (min-width: 767px){
+     .nd-ds .btn-pr {
+        position: absolute;
+        top: 25%;
+        width: 170px;
+        left: 50%;
+        white-space: pre-wrap;
+      }
+}
